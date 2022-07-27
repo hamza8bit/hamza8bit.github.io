@@ -13,17 +13,17 @@
 
 
 .linklist a:nth-child(2n+1) {
-    background-color: #FEF;
+    background-color: #565656;
 }
 
 .linklist a:nth-child(2n) {
-    background-color: #CDC;
+    background-color: #343434;
 }
 
 .linklist a:active,
 .linklist a:hover {
     color: red;
-    background-color: #999;
+    background-color: #aaa;
 }
 
 .list2 a{
@@ -33,7 +33,7 @@
     box-shadow:  0 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
 .list2 a:nth-child(2n+1){
-    background-color: #D5C6ED;
+    background-color: #432432;
 }
 
 .list2 a:hover{
