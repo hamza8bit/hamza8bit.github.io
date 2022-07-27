@@ -1,0 +1,52 @@
+/*
+Color list
+	Dodger Blue
+
+*/
+
+.orangeText{
+    color: orangered !important;
+}
+.coral{
+	background-color: coral !important;
+}
+.deepskyblue{
+	background-color: deepskyblue !important;
+}
+.yellow{
+	background-color: #ffcf3f !important;
+}
+.mediumpurple{
+	background-color: mediumpurple !important;
+}
+
+.width80{
+	width: 80%;
+}
+.width75{
+	width: 75%;
+}
+.width50{
+	width: 50%;
+}
+.width60{
+	width: 60%;
+}
+.width70{
+	width: 70%;
+}
+.width20{
+	width: 20%;
+}
+.width10{
+	width: 10%;
+}
+
+.height24{
+	height: 24px;
+	line-height: 24px;
+}
+.height28{
+	height: 28px;
+	line-height: 28px;
+}
