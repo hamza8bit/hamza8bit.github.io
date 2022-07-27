@@ -1,0 +1,305 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(nav.css);
+@import url(extra.css);
+@import url(lists.css);
+
+input[type=radio] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+input[type=radio]+label:before {
+    font-family: FontAwesome;
+    content: "\f1db";
+    letter-spacing: 10px;
+    color: DodgerBlue;
+}
+
+input[type=radio]:checked+label:before {
+    content: "\f192";
+}
+
+input[type=radio]:hover+label:before {
+    font-weight: bold;
+    /*color:orange;*/
+}
+
+body {
+    color: #000305;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.margin .fa {
+    color: DodgerBlue;
+    margin: 0 12px 0 0;
+}
+
+.margin {
+    margin: 60px 2% 0;
+}
+
+content {
+    width: 70%;
+    float: left;
+}
+aside {
+    width: 30%;
+    float: left;
+}
+.twenty{
+    width: 20%;
+    float: left;
+}
+.fifty{
+    width: 50%;
+    float: left;
+}
+
+article {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2% 1%;
+    /*padding: 2%;*/
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+article img {
+    width: 100%;
+}
+
+
+
+/*Extras*/
+
+h1,
+h2,
+h3,
+h4 {
+    color: #666;
+    margin-left: 15px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+
+h3 {
+    color: #666;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+
+h5 {
+    background-color: DodgerBlue;
+    color: white;
+    display: inline-block;
+    margin: 0 3px;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+h6 {
+    display: inline-block;
+    color: DodgerBlue;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+.textA {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #777;
+    text-align: justify;
+}
+
+.textB {
+    margin: 10px 20px;
+    font-size: 18px;
+    color: #777;
+    text-align: justify;
+}
+
+hr {
+    margin: 10px;
+    border-top: 1px solid #ddd;
+}
+
+
+
+/*Extras*/
+
+.textInput {
+    float: left;
+    width: 100%;
+}
+
+.textInput p {
+    margin: 5px 10px 5px 20px;
+    font-size: 18px;
+    width: 80px;
+    float: left;
+    color: #777;
+}
+
+
+.textInput input {
+    padding: 3px 8px;
+    margin: 8px 4px;
+    border: 2px solid #999;
+    border-radius: 4px;
+}
+
+.radios {
+    margin: 5px 40px;
+    font-size: 17px;
+    color: #777;
+}
+
+form button {
+    float: right;
+    margin: 2px 12px 12px 2px;
+    width: 100px;
+    padding: 10px 15px;
+    border: 2px solid DodgerBlue;
+    background-color: #EEE;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+}
+
+form button:hover {
+    background-color: #A8C7F0;
+    /* Green */
+}
+
+form button:active {
+    background-color: #4890F0;
+}
+
+button .fa {
+    margin: 0 !important;
+}
+
+textarea {
+    width: 70%;
+    height: 80px;
+    margin: 0 10%;
+    font-size: 17px;
+    background-color: #f8f8f8;
+    resize: none;
+    padding: 3px 8px;
+    border: 2px solid #999;
+    border-radius: 4px;
+}
+
+
+/*Skills*/
+.SkillBar {
+    background-color: lightgray;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.SkillBar div {
+    font-size: 12px;
+    color: white;
+    animation-name: widthzero;
+    animation-duration: 4s;
+}
+
+@keyframes widthzero {
+    from {
+        width: 0%
+    }
+}
+/*Skills*/
+
+.picturebox {
+    text-decoration: none;
+}
+
+.picturebox h1 {
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+}
+
+.buttonlist button:hover {
+    background-color: #70D270;
+    cursor: pointer;
+}
+
+.buttonlist button:active {
+    background-color: #19D219;
+
+    color: gray;
+}
+
+@media only screen and (max-width: 970px) {
+
+    .margin {
+        font-size: 90%;
+    }
+
+    content,
+    aside {
+        width: 50%;
+    }
+    .twenty{
+        width: 100%;
+    }
+    .fifty{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 800px)
+{
+    nav ul {
+        background-color: #624566;
+        width: 100%;
+        display: block;
+    }
+    nav ul li{
+        display: inline;
+
+        float: right;
+    }
+    .fa-bars {
+        display: inline-block;
+    }
+}
+@media only screen and (max-width: 600px)
+
+{
+    .margin {
+        font-size: 90%;
+    }
+    
+    .margin {
+        line-height: 25px;
+        border-radius: 5px;
+    }
+    content,
+    aside {
+        width: 100%;
+    }
+    .fifty, .twenty{
+        width: 100%;
+    }
+}

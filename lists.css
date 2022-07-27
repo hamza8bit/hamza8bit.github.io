@@ -1,0 +1,47 @@
+
+.linklist {
+    margin: 10px 0;
+}
+
+.linklist a,
+.linklist a:link {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+}
+
+
+.linklist a:nth-child(2n+1) {
+    background-color: #FEF;
+}
+
+.linklist a:nth-child(2n) {
+    background-color: #CDC;
+}
+
+.linklist a:active,
+.linklist a:hover {
+    color: red;
+    background-color: #999;
+}
+
+.list2 a{
+    font-size: 24px;
+    text-align: center;
+    margin: 12px 0;
+    box-shadow:  0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.list2 a:nth-child(2n+1){
+    background-color: #D5C6ED;
+}
+
+.list2 a:hover{
+
+    color: red;
+    background-color: #88AAEE;
+}
+.list2 a:active {
+    color: red;
+    background-color: #999;
+}

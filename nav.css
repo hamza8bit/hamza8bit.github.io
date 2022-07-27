@@ -1,0 +1,147 @@
+footer {
+    width: 100%;
+    height: 40px;
+    float: left;
+    font-size: 20px;
+    line-height: 40px;
+    background-color: dimgray;
+    text-align: center;
+    color: white;
+}
+
+footer .fa {
+    color: white;
+}
+footer .fa:hover{
+    color: #294070;
+}
+
+nav {
+    position: fixed;
+    background-color: #666;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    overflow: hidden;
+    animation-duration: 0.7s;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.fa-bars {
+    display: none;
+    color: #B1A5EB;
+    float: right;
+    margin-right: 20px;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: 100;
+    animation-duration: 0.7s;
+}
+
+
+@keyframes bars {
+    from {
+        color: #B1A5EB;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes barsback {
+    from {
+        color: #F687F7;
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes navexpand {
+    from {
+        height: 60px;
+    }
+}
+
+@keyframes navunexpand {
+    from {
+        height: 120px;
+    }
+}
+
+.logo {
+    margin-left: 5%;
+}
+
+
+.logo a,
+.logo a:link,
+.logo a:visited {
+    text-decoration: none;
+    margin: 0 auto;
+    display: inline;
+    line-height: 60px;
+    height: 60px;
+    font-family: "Georgia";
+    font-style: italic;
+    font-weight: 400;
+    color: limegreen;
+    font-size: 40px;
+}
+
+.logo a:hover,
+.logo a:focus,
+.logo a:active {
+    animation-name: logoanim;
+    animation-duration: 1s;
+    color: #CF5C3F;
+    font-size: 41px;
+}
+
+@keyframes logoanim {
+    from {
+        color: limegreen;
+        font-size: 40px;
+    }
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    float: right;
+    display: inline-flex;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #B1A5EB;
+    font-size: 32px;
+    padding: 0px 25px;
+    height: 60px;
+    line-height: 60px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+    animation-name: colorshift;
+    animation-duration: .5s;
+    text-decoration: none;
+    color: #CF5C3F;
+    font-size: 34px;
+    padding: 0px 24px;
+}
+
+@keyframes colorshift {
+    from {
+        color: #B1A5EB;
+        font-size: 32px;
+        padding: 0px 25px;
+    }
+}
+
+
+nav.active a:link,
+nav.active a:visited {
+    background-color: #CF5C3F;
+    text-shadow: none;
+}
+
