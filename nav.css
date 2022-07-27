@@ -18,14 +18,14 @@ footer .fa:hover{
 
 nav {
     position: fixed;
-    background-color: #666;
+    background-color: #010101;
     left: 0;
     right: 0;
     top: 0;
     height: 60px;
     overflow: hidden;
     animation-duration: 0.7s;
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(128, 128, 128, 0.2);
     opacity: 1;
 }
 
@@ -80,8 +80,6 @@ nav {
     display: inline;
     line-height: 60px;
     height: 60px;
-    font-family: "Georgia";
-    font-style: italic;
     font-weight: 400;
     color: limegreen;
     font-size: 40px;
