@@ -2,6 +2,13 @@
 @import url(nav.css);
 @import url(extra.css);
 @import url(lists.css);
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+/* @font-face {
+    font-family: "Railway";
+    src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap") format("truetype");
+  } */
 
 input[type=radio] {
     border: 0;
@@ -31,7 +38,9 @@ input[type=radio]:hover+label:before {
 }
 
 body {
-    color: #000305;
+    background-color: #000;
+    color: #fff;
+    font-family: monospace;
     line-height: 1.5;
     margin: 0;
 }
@@ -41,6 +50,15 @@ body {
     margin: 0 12px 0 0;
 }
 
+.hero-footer-icon{
+    fill: #fff;
+    opacity: .6;
+    aspect-ratio: 1 / 1;
+    width: 1.25rem;
+}
+.hero-footer-icon:hover{
+    opacity: 1;
+}
 .margin {
     margin: 60px 2% 0;
 }
@@ -63,12 +81,12 @@ aside {
 }
 
 article {
-    background-color: white;
+    background-color: #222;
     border-radius: 10px;
     overflow: hidden;
     margin: 2% 1%;
     /*padding: 2%;*/
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.2);
 }
 
 article img {
@@ -83,7 +101,7 @@ h1,
 h2,
 h3,
 h4 {
-    color: #666;
+    color: #efefef;
     margin-left: 15px;
 }
 
@@ -94,7 +112,7 @@ h1 {
 }
 
 h3 {
-    color: #666;
+    color: #bbb;
     margin-left: 15px;
     font-size: 20px;
 }
@@ -121,14 +139,14 @@ h6 {
 .textA {
     margin: 0 15px;
     font-size: 16px;
-    color: #777;
+    color: #ccc;
     text-align: justify;
 }
 
 .textB {
     margin: 10px 20px;
     font-size: 18px;
-    color: #777;
+    color: #ccc;
     text-align: justify;
 }
 
@@ -151,14 +169,14 @@ hr {
     font-size: 18px;
     width: 80px;
     float: left;
-    color: #777;
+    color: #ccc;
 }
 
 
 .textInput input {
     padding: 3px 8px;
     margin: 8px 4px;
-    border: 2px solid #999;
+    border: 2px solid #aaa;
     border-radius: 4px;
 }
 
@@ -198,17 +216,17 @@ textarea {
     height: 80px;
     margin: 0 10%;
     font-size: 17px;
-    background-color: #f8f8f8;
+    background-color: #232323;
     resize: none;
     padding: 3px 8px;
-    border: 2px solid #999;
+    border: 2px solid #aaa;
     border-radius: 4px;
 }
 
 
 /*Skills*/
 .SkillBar {
-    background-color: lightgray;
+    background-color: #454545;
     margin: 10px;
     border-radius: 10px;
     overflow: hidden;
