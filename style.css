@@ -2,6 +2,13 @@
 @import url(nav.css);
 @import url(extra.css);
 @import url(lists.css);
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+/* @font-face {
+    font-family: "Railway";
+    src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap") format("truetype");
+  } */
 
 input[type=radio] {
     border: 0;
@@ -43,6 +50,15 @@ body {
     margin: 0 12px 0 0;
 }
 
+.hero-footer-icon{
+    fill: #fff;
+    opacity: .6;
+    aspect-ratio: 1 / 1;
+    width: 1.25rem;
+}
+.hero-footer-icon:hover{
+    opacity: 1;
+}
 .margin {
     margin: 60px 2% 0;
 }
