@@ -13,17 +13,17 @@
 
 
 .linklist a:nth-child(2n+1) {
-    background-color: #565656;
+    background-color: var(--background-light);
 }
 
 .linklist a:nth-child(2n) {
-    background-color: #343434;
+    background-color: var(--background-mid);
 }
 
 .linklist a:active,
 .linklist a:hover {
-    color: red;
-    background-color: #aaa;
+    color: var(--primary);
+    background-color: var(--text-color-dim);
 }
 
 .list2 a{
@@ -33,15 +33,15 @@
     box-shadow:  0 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
 .list2 a:nth-child(2n+1){
-    background-color: #432432;
+    background-color: var(--text-color-dim);
 }
 
 .list2 a:hover{
 
-    color: red;
-    background-color: #88AAEE;
+    color: var(--primary);
+    background-color: var(--text-color);
 }
 .list2 a:active {
-    color: red;
-    background-color: #999;
+    color: var(--primary);
+    background-color: var(--text-color-dim);
 }

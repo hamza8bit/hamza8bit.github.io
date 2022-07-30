@@ -10,6 +10,26 @@
     src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap") format("truetype");
   } */
 
+html{
+    --primary: #006366;
+    --primary-bright: #0aa;
+    --accent: #CC2614;
+    --accent-light: #CC8C14;
+    --background: #000;
+    --background-mid: #222;
+    --background-light: #333;
+    --text-color: #fafafa;
+    --text-color-dim: #c9c9c9;
+}
+.banner{
+    margin-top: 60px;
+    background-image: linear-gradient(to bottom right, var(--primary-bright), var(--primary));
+    text-align: center;
+    padding: 20px; 
+}
+
+
+
 input[type=radio] {
     border: 0;
     clip: rect(0 0 0 0);
@@ -25,7 +45,7 @@ input[type=radio]+label:before {
     font-family: FontAwesome;
     content: "\f1db";
     letter-spacing: 10px;
-    color: DodgerBlue;
+    color: var(--accent)
 }
 
 input[type=radio]:checked+label:before {
@@ -38,20 +58,20 @@ input[type=radio]:hover+label:before {
 }
 
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--background);
+    color: var(--text-color);
     font-family: monospace;
     line-height: 1.5;
     margin: 0;
 }
 
 .margin .fa {
-    color: DodgerBlue;
+    color: var(--primary-bright);
     margin: 0 12px 0 0;
 }
 
 .hero-footer-icon{
-    fill: #fff;
+    fill: var(--text-color);
     opacity: .6;
     aspect-ratio: 1 / 1;
     width: 1.25rem;
@@ -81,12 +101,12 @@ aside {
 }
 
 article {
-    background-color: #222;
+    background-color: var(--background-mid);
     border-radius: 10px;
     overflow: hidden;
     margin: 2% 1%;
     /*padding: 2%;*/
-    box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 2px 0 var(--background-light);
 }
 
 article img {
@@ -101,7 +121,7 @@ h1,
 h2,
 h3,
 h4 {
-    color: #efefef;
+    color: var(--text-color);
     margin-left: 15px;
 }
 
@@ -112,15 +132,16 @@ h1 {
 }
 
 h3 {
-    color: #bbb;
-    margin-left: 15px;
+    color: var(--text-color-dim);
+    margin-inline-start: 15px;
+    margin-block-end: 0;
     font-size: 20px;
 }
 
 
 h5 {
-    background-color: DodgerBlue;
-    color: white;
+    background-color: var(--primary-bright);
+    color: var(--text-color);
     display: inline-block;
     margin: 0 3px;
     border-radius: 6px;
@@ -129,8 +150,8 @@ h5 {
 
 h6 {
     display: inline-block;
-    color: DodgerBlue;
-    margin-bottom: 15px;
+    color: var(--primary-bright);
+    margin-bottom: 10px;
     margin-left: 15px;
     margin-top: 12px;
     font-size: 15px;
@@ -139,20 +160,20 @@ h6 {
 .textA {
     margin: 0 15px;
     font-size: 16px;
-    color: #ccc;
+    color: var(--text-color);
     text-align: justify;
 }
 
 .textB {
     margin: 10px 20px;
     font-size: 18px;
-    color: #ccc;
+    color: var(--text-color);
     text-align: justify;
 }
 
 hr {
     margin: 10px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--text-color);
 }
 
 
@@ -169,14 +190,14 @@ hr {
     font-size: 18px;
     width: 80px;
     float: left;
-    color: #ccc;
+    color: var(--text-color);
 }
 
 
 .textInput input {
     padding: 3px 8px;
     margin: 8px 4px;
-    border: 2px solid #aaa;
+    border: 2px solid var(--text-color);
     border-radius: 4px;
 }
 
@@ -191,20 +212,20 @@ form button {
     margin: 2px 12px 12px 2px;
     width: 100px;
     padding: 10px 15px;
-    border: 2px solid DodgerBlue;
-    background-color: #EEE;
+    border: 2px solid var(--primary-bright);
+    background-color: var(--background-light);
     border-radius: 50%;
     font-size: 24px;
     text-align: center;
 }
 
 form button:hover {
-    background-color: #A8C7F0;
+    background-color: var(--primary-bright);
     /* Green */
 }
 
 form button:active {
-    background-color: #4890F0;
+    background-color: var(--primary);
 }
 
 button .fa {
@@ -216,17 +237,17 @@ textarea {
     height: 80px;
     margin: 0 10%;
     font-size: 17px;
-    background-color: #232323;
+    background-color: var(--background-light);
     resize: none;
     padding: 3px 8px;
-    border: 2px solid #aaa;
+    border: 2px solid var(--text-color);
     border-radius: 4px;
 }
 
 
 /*Skills*/
 .SkillBar {
-    background-color: #454545;
+    background-color: var(--background-light);
     margin: 10px;
     border-radius: 10px;
     overflow: hidden;
@@ -234,8 +255,9 @@ textarea {
 }
 
 .SkillBar div {
-    font-size: 12px;
-    color: white;
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: bold;
     animation-name: widthzero;
     animation-duration: 4s;
 }
@@ -259,14 +281,14 @@ textarea {
 }
 
 .buttonlist button:hover {
-    background-color: #70D270;
+    background-color: var(--accent-light);
     cursor: pointer;
 }
 
 .buttonlist button:active {
-    background-color: #19D219;
+    background-color: var(--accent);
 
-    color: gray;
+    color: var(--background-light);
 }
 
 @media only screen and (max-width: 970px) {
@@ -289,7 +311,7 @@ textarea {
 @media only screen and (max-width: 800px)
 {
     nav ul {
-        background-color: #624566;
+        background-color: var(--background-light);
         width: 100%;
         display: block;
     }

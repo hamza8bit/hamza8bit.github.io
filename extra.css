@@ -23,6 +23,9 @@ Color list
 .width80{
 	width: 80%;
 }
+.width85{
+	width: 85%;
+}
 .width75{
 	width: 75%;
 }
@@ -49,4 +52,18 @@ Color list
 .height28{
 	height: 28px;
 	line-height: 28px;
+}
+.mb-2{
+	margin-bottom: 1em;
+}
+/* 
+.remove-visited:visited{
+	color: currentColor;
+} */
+
+a{
+	color: var(--primary-bright)
+}
+a:visited{
+	color: var(--primary)
 }

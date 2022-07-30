@@ -4,34 +4,34 @@ footer {
     float: left;
     font-size: 20px;
     line-height: 40px;
-    background-color: dimgray;
+    background-color: var(--background-mid);
     text-align: center;
     color: white;
 }
 
 footer .fa {
-    color: white;
+    color: var(--text-color);
 }
 footer .fa:hover{
-    color: #294070;
+    color: var(--primary);
 }
 
 nav {
     position: fixed;
-    background-color: #010101;
+    background-color: var(--background-mid);
     left: 0;
     right: 0;
     top: 0;
     height: 60px;
     overflow: hidden;
     animation-duration: 0.7s;
-    box-shadow: 0 2px 4px 0 rgba(128, 128, 128, 0.2);
+    box-shadow: 0 2px 4px 0 var(--background-light);
     opacity: 1;
 }
 
 .fa-bars {
     display: none;
-    color: #B1A5EB;
+    color: var(--accent-light);
     float: right;
     margin-right: 20px;
     line-height: 60px;
@@ -43,14 +43,14 @@ nav {
 
 @keyframes bars {
     from {
-        color: #B1A5EB;
+        color:  var(--accent-light);
         transform: rotate(180deg);
     }
 }
 
 @keyframes barsback {
     from {
-        color: #F687F7;
+        color:  var(--accent);
         transform: rotate(-180deg);
     }
 }
@@ -81,7 +81,7 @@ nav {
     line-height: 60px;
     height: 60px;
     font-weight: 400;
-    color: limegreen;
+    color: var(--primary-bright);
     font-size: 40px;
 }
 
@@ -90,13 +90,13 @@ nav {
 .logo a:active {
     animation-name: logoanim;
     animation-duration: 1s;
-    color: #CF5C3F;
+    color: var(--primary);
     font-size: 41px;
 }
 
 @keyframes logoanim {
     from {
-        color: limegreen;
+        color: var(--primary-bright);
         font-size: 40px;
     }
 }
@@ -110,7 +110,7 @@ nav ul {
 
 nav ul li a:link,
 nav ul li a:visited {
-    color: #B1A5EB;
+    color: var(--accent-light);
     font-size: 32px;
     padding: 0px 25px;
     height: 60px;
@@ -123,14 +123,14 @@ nav ul li a:active {
     animation-name: colorshift;
     animation-duration: .5s;
     text-decoration: none;
-    color: #CF5C3F;
+    color: var(--accent);
     font-size: 34px;
     padding: 0px 24px;
 }
 
 @keyframes colorshift {
     from {
-        color: #B1A5EB;
+        color: var(--text-color-dim);
         font-size: 32px;
         padding: 0px 25px;
     }
@@ -139,7 +139,7 @@ nav ul li a:active {
 
 nav.active a:link,
 nav.active a:visited {
-    background-color: #CF5C3F;
+    background-color: var(--accent-light);
     text-shadow: none;
 }
 

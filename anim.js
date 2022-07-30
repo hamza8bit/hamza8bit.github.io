@@ -12,7 +12,7 @@ function NavExpand(){
         {
             nav.style.height="120px";
             nav.style.animationName = "navexpand"
-            bars.style.color="#F687F7";
+            bars.style.color="var(--accent)";
             bars.style.animationName= "bars";
         }
     }
