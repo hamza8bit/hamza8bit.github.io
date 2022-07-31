@@ -16,10 +16,12 @@ html{
     --accent: #CC2614;
     --accent-light: #CC8C14;
     --background: #000;
-    --background-mid: #222;
-    --background-light: #333;
+    --background-mid: #111111;
+    --background-light: #222222;
     --text-color: #fafafa;
     --text-color-dim: #c9c9c9;
+
+    font-size: 1rem;
 }
 .banner{
     margin-top: 60px;
@@ -126,7 +128,7 @@ h4 {
 }
 
 h1 {
-    font-size: 36px;
+    /* font-size: 36px; */
     margin-bottom: 0px;
     font-weight: 300;
 }
@@ -135,7 +137,7 @@ h3 {
     color: var(--text-color-dim);
     margin-inline-start: 15px;
     margin-block-end: 0;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 
@@ -154,19 +156,19 @@ h6 {
     margin-bottom: 10px;
     margin-left: 15px;
     margin-top: 12px;
-    font-size: 15px;
+    /* font-size: 15px; */
 }
 
 .textA {
     margin: 0 15px;
-    font-size: 16px;
+    /* font-size: 16px; */
     color: var(--text-color);
     text-align: justify;
 }
 
 .textB {
     margin: 10px 20px;
-    font-size: 18px;
+    /* font-size: 18px; */
     color: var(--text-color);
     text-align: justify;
 }
@@ -187,7 +189,7 @@ hr {
 
 .textInput p {
     margin: 5px 10px 5px 20px;
-    font-size: 18px;
+    /* font-size: 18px; */
     width: 80px;
     float: left;
     color: var(--text-color);
@@ -203,7 +205,7 @@ hr {
 
 .radios {
     margin: 5px 40px;
-    font-size: 17px;
+    /* font-size: 17px; */
     color: #777;
 }
 
@@ -215,7 +217,7 @@ form button {
     border: 2px solid var(--primary-bright);
     background-color: var(--background-light);
     border-radius: 50%;
-    font-size: 24px;
+    /* font-size: 24px; */
     text-align: center;
 }
 
@@ -236,7 +238,7 @@ textarea {
     width: 70%;
     height: 80px;
     margin: 0 10%;
-    font-size: 17px;
+    /* font-size: 17px; */
     background-color: var(--background-light);
     resize: none;
     padding: 3px 8px;
@@ -255,7 +257,7 @@ textarea {
 }
 
 .SkillBar div {
-    font-size: 14px;
+    /* font-size: 14px; */
     color: var(--text-color);
     font-weight: bold;
     animation-name: widthzero;
@@ -294,7 +296,7 @@ textarea {
 @media only screen and (max-width: 970px) {
 
     .margin {
-        font-size: 90%;
+        /* font-size: 90%; */
     }
 
     content,
@@ -328,7 +330,7 @@ textarea {
 
 {
     .margin {
-        font-size: 90%;
+        /* font-size: 90%; */
     }
     
     .margin {
